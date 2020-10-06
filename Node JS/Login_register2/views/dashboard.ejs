@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>You are logged in as: <%= user.username %> with the level of <%= user.level %></h1>
+    <% if(user.level == 1){ %>
+        <span>You are level 1</span>
+    <% } %> 
+    <% if(user.level == 2){ %>
+        <span>You are level 2</span>
+    <% } %> 
+    <% if(user.level == 3){ %>
+        <span>You are level 3</span>
+    <% } %> 
+    <form action="/logout" method="POST">
+        <input type="submit" value="logout">
+    </form>
+</body>
+</html>

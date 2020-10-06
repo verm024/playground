@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <form action="/login" method="POST">
+        <label for="uname-login">Username</label>
+        <input type="text" id="uname-login" name="username">
+        <label for="pwd-login">Password</label>
+        <input type="password" id="pwd-login" name="password">
+        <input type="submit" value="Login">
+    </form>
+
+    <form action="/register" method="POST">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="username">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="password">
+        <label for="lvl">Level user</label>
+        <select name="level" id="lvl">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
