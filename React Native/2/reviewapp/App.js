@@ -6,6 +6,8 @@ import * as Font from 'expo-font'
 
 import { globalStyles } from "./styles/global"
 
+import { AppNavigator } from "./routes/homeStack"
+
 const loadFont = async () => [
   await Font.loadAsync({
     "nunito-regular": require("./assets/fonts/Nunito-Regular.ttf"),
@@ -18,10 +20,11 @@ export default function App() {
 
   if (isLoaded) {
     return (
-      <View style={globalStyles.container}>
-        <Text style={globalStyles.titleText}>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      // <View style={globalStyles.container}>
+      //   <Text style={globalStyles.titleText}>Open up App.js to start working on your app!</Text>
+      //   <StatusBar style="auto" />
+      // </View>
+      <AppNavigator />
     );
   }
   else {
